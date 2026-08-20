@@ -8,13 +8,13 @@ The application must expose exactly the following endpoints, using these paths, 
 
 Endpoints (all request/response bodies are JSON; all amounts are integer pence):
 
-POST /auth/register   — request: email, password   — response: user_id, email   — 201
-POST /auth/login      — request: email, password   — response: access_token    — 200
-GET  /accounts/me     — response: account_id, balance_pence, currency          — 200
-POST /deposits        — request: amount_pence       — response: transaction_id, status, balance_pence — 201
-POST /withdrawals     — request: amount_pence       — response: transaction_id, status, balance_pence — 201
-POST /transfers       — request: recipient_email, amount_pence — response: transaction_id, status, balance_pence — 201
-GET  /transactions    — response: list of { transaction_id, type, amount_pence, direction, status, created_at } — 200
+POST /auth/register   — request: email, password   — response: user_id, email   — 201\
+POST /auth/login      — request: email, password   — response: access_token    — 200\
+GET  /accounts/me     — response: account_id, balance_pence, currency          — 200\
+POST /deposits        — request: amount_pence       — response: transaction_id, status, balance_pence — 201\
+POST /withdrawals     — request: amount_pence       — response: transaction_id, status, balance_pence — 201\
+POST /transfers       — request: recipient_email, amount_pence — response: transaction_id, status, balance_pence — 201\
+GET  /transactions    — response: list of { transaction_id, type, amount_pence, direction, status, created_at } — 200\
 POST /transactions/{transaction_id}/reversal — response: transaction_id, reverses_transaction_id, status — 201
 
 Authenticated endpoints expect the credential returned by /auth/login in an Authorization header as a bearer token.
