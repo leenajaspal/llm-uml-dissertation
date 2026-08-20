@@ -1,4 +1,4 @@
-#Prompt 1: Prose
+# Prompt 1: Prose
 
 You are building a backend application. Read the following for the full requirements and produce a complete, working implementation. Produce the complete application as downloadable Python files, one per module, including a dependency file. Do not ask clarifying questions; make reasonable decisions and proceed.
 
