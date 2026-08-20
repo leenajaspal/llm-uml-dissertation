@@ -1,0 +1,8 @@
+# Peer-to-peer payments wallet - runtime dependencies
+# All are widely available on PyPI.
+
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.10.4
+email-validator==2.2.0
+PyJWT>=2.4,<3

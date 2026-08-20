@@ -1,0 +1,6 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+PyJWT>=2.8
+email-validator>=2.1
+# httpx is only needed to run the test suite (FastAPI's TestClient).
+httpx>=0.27
